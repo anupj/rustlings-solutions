@@ -4,17 +4,16 @@
 // Make the code compile and the tests pass!
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 struct Package {
     sender_country: String,
     recipient_country: String,
     weight_in_grams: i32,
+    is_international: bool,
 }
 
 impl Package {
-    fn new(sender_country: String, recipient_country: String, weight_in_grams: i32) -> Package {
+    fn new(sender_country: String, recipient_country: String, weight_in_grams: i32 ) -> Package {
         if weight_in_grams <= 0 {
             panic!("Can not ship a weightless package.")
         } else {
@@ -22,16 +21,26 @@ impl Package {
                 sender_country,
                 recipient_country,
                 weight_in_grams,
+                is_international: false,
             }
         }
     }
 
-    fn is_international(&self) -> ??? {
+    fn is_international(&self) -> bool {
         // Something goes here...
+        let countryCanada = "Canada".to_string();
+
+        if (self.sender_country == countryCanada &&
+            self.recipient_country == countryCanada) {
+                false
+            } else {
+                true
+            }
     }
 
-    fn get_fees(&self, cents_per_gram: i32) -> ??? {
+    fn get_fees(&self, cents_per_gram: i32) -> i32 {
         // Something goes here...
+        self.weight_in_grams * cents_per_gram
     }
 }
 
