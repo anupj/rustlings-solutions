@@ -1,5 +1,7 @@
 # rustlings 🦀❤️
 
+### This repo contains Anup Jadhavs solutions to Rustlings.
+
 Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
 _...looking for the old, web-based version of Rustlings? Try [here](https://github.com/rust-lang/rustlings/tree/rustlings-1)_
@@ -27,20 +29,6 @@ curl -L https://raw.githubusercontent.com/rust-lang/rustlings/main/install.sh | 
 ```
 
 This will install Rustlings and give you access to the `rustlings` command. Run it to get started!
-
-## Windows
-
-In PowerShell (Run as Administrator), set `ExecutionPolicy` to `RemoteSigned`:
-
-```ps1
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
-Then, you can run:
-
-```ps1
-Start-BitsTransfer -Source https://raw.githubusercontent.com/rust-lang/rustlings/main/install.ps1 -Destination $env:TMP/install_rustlings.ps1; Unblock-File $env:TMP/install_rustlings.ps1; Invoke-Expression $env:TMP/install_rustlings.ps1
-```
 
 To install Rustlings. Same as on MacOS/Linux, you will have access to the `rustlings` command after it.
 
@@ -123,14 +111,6 @@ rustlings list
 ## Testing yourself
 
 After every couple of sections, there will be a quiz that'll test your knowledge on a bunch of sections at once. These quizzes are found in `exercises/quizN.rs`.
-
-## Enabling `rust-analyzer`
-
-Run the command `rustlings lsp` which will generate a `rust-project.json` at the root of the project, this allows [rust-analyzer](https://rust-analyzer.github.io/) to parse each exercise. 
-
-## Continuing On
-
-Once you've completed Rustlings, put your new knowledge to good use! Continue practicing your Rust skills by building your own projects, contributing to Rustlings, or finding other open-source projects to contribute to.
 
 ## Uninstalling Rustlings
 
