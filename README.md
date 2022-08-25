@@ -1,6 +1,6 @@
 # rustlings 🦀❤️
 
-### This repo contains Anup Jadhavs solutions to Rustlings.
+### This repo contains Anup Jadhavs solution to rustlings exercises
 
 Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
