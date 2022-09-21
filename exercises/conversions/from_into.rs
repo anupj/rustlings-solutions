@@ -39,6 +39,11 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        let str_vec: Vec<&str> = s.split(',').collect();
+        Person {
+            name: str_vec[0].to_string(),
+            age: str_vec[1].to_string().parse::<usize>().unwrap(),
+        }
     }
 }
 
