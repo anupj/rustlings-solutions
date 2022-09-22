@@ -2,7 +2,8 @@
 
 ### This repo contains solution to rustlings exercises by Anup Jadhav.
 
-**NOTE** Don't use this repo to "run" rustlings on your machine as I've deleted the `rustlings` executable files from this repo. Please see the [original Rustlings repo](https://github.com/rust-lang/rustlings) to run rustlings.
+
+> **NOTE:** Don't use this repo to "run" rustlings on your machine as I've deleted the `rustlings` executable files from this repo. Please see the [original Rustlings repo](https://github.com/rust-lang/rustlings) to run rustlings.
 
 Greetings and welcome to `rustlings`. This project contains small exercises to get you used to reading and writing Rust code. This includes reading and responding to compiler messages!
 
